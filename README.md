@@ -1,2 +1,1 @@
-# SamiLab
-Public website for the Sami Lab
+Lab website for the SamiLab, Norwich, UK
