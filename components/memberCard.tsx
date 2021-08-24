@@ -9,7 +9,7 @@ interface CardProps {
 export default function MemberCard(props: CardProps) {
   return (
       <div className={`flex ${props.reverse ? "sm:flex-row-reverse" : "sm:flex-row "}`}>
-        <figure className="md:flex bg-gray-100 rounded-xl shadow-md md:p-0 p-8 w-1/2">
+          <figure className="md:flex bg-gradient-to-tr from-gray-50 via-blue-50 to-blue-50 rounded-xl shadow-md md:p-0 p-8 w-1/2">
           <img
               className="w-32 h-16 max-h-48 md:w-48 md:h-auto md:rounded-xl rounded-full mx-auto md:m-0 object-cover"
             src={`/profiles/${props.imagePath}`}

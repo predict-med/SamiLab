@@ -11,8 +11,7 @@ export default function People() {
         <div className="text-lg text-gray-500 max-w-md mx-auto">
           Our multi disciplinary team has years of both machine learning and medical experience.
         </div>
-        <div className="w-full max-w-4xl border border-gray-100 my-8 mx-auto"></div>
-          <div className="flex flex-col space-y-10">
+          <div className="flex flex-col mt-12 space-y-10">
           <MemberCard
             imagePath="sabersami.png"
             name="Saber Sami"

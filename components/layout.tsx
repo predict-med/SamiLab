@@ -12,7 +12,7 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <div className="flex bg-white flex-col justify-center min-h-screen px-8">
+    <div className="flex bg-white flex-col justify-center min-h-screen">
       <Head>
         <title>Sami Lab</title>
         <meta name="description" content="Sami Lab for predictive medicine." />

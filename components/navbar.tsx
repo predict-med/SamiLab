@@ -20,9 +20,6 @@ export default function Navbar() {
         <Link href="/people">
             <a className="p-4 hover:text-gray-600">People</a>
         </Link>
-        <Link href="/about">
-            <a className="p-4 hover:text-gray-600">About</a>
-        </Link>
         <Link href="/contact">
             <a className="p-4 hover:text-gray-600">Contact</a>
         </Link>

@@ -42,13 +42,12 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className="container text-center min-w-3xl pb-24 pt-16 mx-auto">
+      <div className="container text-center min-w-3xl pb-8 pt-8 mx-auto">
         <div className="text-8xl">✉️</div>
         <div className="max-w-6xl mx-auto">
-          <div className="font-bold text-6xl text-gray-900 max-w-xl mx-auto">
+          <div className="font-bold text-6xl text-gray-900 max-w-xl mx-auto mb-6">
             Contact Us.
           </div>
-          <div className="w-full border border-gray-100 my-8 mx-auto max-w-4xl"></div>
           <div id="contactForm" className="mx-auto flex justify-center p-8">
             <form className="w-full max-w-lg">
               <div className="flex flex-wrap -mx-3 mb-6">
