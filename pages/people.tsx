@@ -4,14 +4,14 @@ import MemberCard from "../components/memberCard";
 export default function People() {
   return (
     <Layout>
-      <div className="container text-center max-w-6xl items-center min-w-3xl align-center pb-24 pt-20 mx-auto">
+      <div className="container text-center max-w-6xl items-center min-w-3xl align-center pb-20 pt-16 mx-auto">
         <div className="font-bold text-6xl text-gray-900 max-w-xl mx-auto mb-4">
           Our Team.
         </div>
         <div className="text-lg text-gray-500 max-w-md mx-auto">
           Our multi disciplinary team has years of both machine learning and medical experience.
         </div>
-        <div className="w-full border border-gray-100 my-8"></div>
+        <div className="w-full max-w-4xl border border-gray-100 my-8 mx-auto"></div>
           <div className="flex flex-col space-y-10">
           <MemberCard
             imagePath="sabersami.png"
