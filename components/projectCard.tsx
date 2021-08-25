@@ -1,30 +1,39 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface CardProps {
-    image: string;
-    buttonText: string;
+  title: string;
+  description: string;
+  author: string;
+  image: StaticImageData;
+  buttonText: string;
+  buttonLink: string;
 }
 
 export default function ProjectCard(props: CardProps) {
-    return (
-        <div className="flex flex-col md:flex-row justify-center flex-wrap gap-3 mt-10  ">
-            <div>
-                <div className="bg-white max-w-xs shadow-lg mx-auto border-b-4 border-green-200 rounded-2xl overflow-hidden  hover:shadow-xl transition duration-500 transform hover:scale-105 cursor-pointer">
-                    <div className="flex h-32  items-center">
-                    </div>
-                    <p className="py-6 px-6 text-lg tracking-wide text-center">
-                        Poster
-                    </p>
-                    <div className="flex justify-center px-5 mb-2 text-sm ">
-                        <button
-                            type="button"
-                            className="border border-green-200 text-black rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-green-600 focus:outline-none focus:shadow-outline"
-                        >
-                            {props.buttonText}
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+  return (
+    <div className="flex bg-white p-8 rounded-lg shadow-lg relative hover:shadow-xl transition duration-500 transform hover:-translate-y-1">
+      <div className="flex flex-col flex-1 my-auto pr-8">
+        <h1 className="text-3xl text-gray-800 font-semibold mb-3">
+          {props.title}
+        </h1>
+        <p className="text-gray-600 leading-6 tracking-normal">
+          {props.description}
+        </p>
+        <Link href="https://github.com/rtybanana/brainboard">
+            <button className="w-32 py-2 px-4 mt-8 text-white font-semibold rounded-md shadow-xl bg-gradient-to-br from-blue-600 to-blue-700 hover:bg-blue-800">
+            {props.buttonText}
+          </button>
+        </Link>
+      </div>
+        <div className="font-bold max-w-sm flex-1 hidden md:flex">
+          <Image src={props.image}/>
+      </div>
+      <div>
+        <span className="absolute font-semibold py-2 px-8 text-sm text-white bottom-0 right-0 bg-gradient-to-br from-blue-600 to-blue-700 rounded-md transform translate-x-2 translate-y-3 shadow-xl">
+            {props.author}
+        </span>
+      </div>
+    </div>
+  );
 }

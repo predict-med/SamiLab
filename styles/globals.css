@@ -20,14 +20,7 @@ a {
     box-sizing: border-box;
 }
 
-.spacer {
-    aspect-ratio: 960/600;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.hero-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-800;
 }
 
-.layer1 {
-    background-image: url("../public/waves.svg");
-}
