@@ -11,7 +11,11 @@ export default function Projects() {
                 </div>
                 <div className="text-lg text-gray-500 max-w-md mx-auto my-6">
                     We believe in collaborative and reproducible science. All of
-                    our projects and papers are proudly <span className="font-bold"> open source. </span>
+                    our projects and papers are proudly{" "}
+                    <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-800">
+                        {" "}
+                        open source.{" "}
+                    </span>
                 </div>
             </div>
         </Layout>

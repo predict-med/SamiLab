@@ -8,7 +8,7 @@ export default function Home() {
             <div className="container text-center min-w-3xl pt-8 pb-12 mx-auto">
                 <div className="text-8xl">🧠</div>
                 <div className="font-bold text-6xl text-gray-900 max-w-xl mx-auto">
-                    Pushing predictive medicine forward.
+                    Pushing <span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-blue-800">predictive</span> medicine forward.
                 </div>
                 <div className="text-lg text-gray-500 max-w-md mx-auto my-6">
                     Our mission is to address the personalised medicine gap in
@@ -24,7 +24,9 @@ export default function Home() {
                                 lab is focused on using analytical and machine
                                 learning techniques to improve patient outcomes.
                             </p>
-                            <button className="bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded mt-4">
+                            <button className="transform bg-gradient-to-br from-blue-600 
+                                to-blue-700 hover:bg-blue-800 hover:scale-105 text-white 
+                                font-bold py-2 px-4 rounded mt-4">
                                 Our Work
                             </button>
                         </div>
