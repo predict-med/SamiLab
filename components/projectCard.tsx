@@ -11,7 +11,6 @@ export default function ProjectCard(props: CardProps) {
             <div>
                 <div className="bg-white max-w-xs shadow-lg mx-auto border-b-4 border-green-200 rounded-2xl overflow-hidden  hover:shadow-xl transition duration-500 transform hover:scale-105 cursor-pointer">
                     <div className="flex h-32  items-center">
-                        <Image src={props.image} />
                     </div>
                     <p className="py-6 px-6 text-lg tracking-wide text-center">
                         Poster
